@@ -8,6 +8,11 @@
 
 @media only screen and (min-width: 601px) {
   body { place-items:  center; }
+  .board-row {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+  }
 }
 
 body {  
@@ -27,7 +32,7 @@ ol {
   transform: translateX(40px);
   color: black;
   font-size: 1.2em;
-  margin: 0 0 5px 0;
+  margin: 6px 0;
   box-shadow: 
     5px 5px 10px rgba(0, 0, 0, 0.4),
     -5px -5px 10px rgba(255, 255, 255, 0.05);
@@ -143,10 +148,12 @@ li > button:hover {
     inset -5px -5px 20px -5px rgba(255, 255, 255, 0.15),
     inset 5px 5px 20px -5px rgba(0, 0, 0, 0.8);
   padding: 1em;
-  align-items: center;
+  justify-items: center;
   display: flex;
   flex-direction: row;
 }
+
+
 
 .game-info {
   width: 11rem;
@@ -236,5 +243,11 @@ li > button:hover {
     padding: 5px;
     margin-top: 15px;
     margin-left: 6px;
+  }
+
+  .board-row {
+    height: 6rem;
+    display: flex;
+    align-items: center;
   }
 }
